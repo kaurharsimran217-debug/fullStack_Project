@@ -1,0 +1,19 @@
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "password": "password"
+}
+
+###
+###
+POST http://127.0.0.1:8000/borrow/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc2NTg1MzAyLCJpYXQiOjE3NzY1ODUwMDIsImp0aSI6IjJlNzgwMTcyMjVhMzQwNDk4MDExNDRiMGM4MThhODA3IiwidXNlcl9pZCI6IjEifQ.xByaYXXFQhzPQLVMKUz_g8XYbMcVA86I6zCuB6TDgLc
+Content-Type: application/json
+
+{
+  "book": 1
+}
+
+###
